@@ -1,3 +1,72 @@
-h1 {
-    text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 10px 1fr 1fr 1fr 10px;
+    grid-template-rows: 10px 1fr 3fr 1fr 10px;
+}
+
+.help {
+    background-color: lightgrey;
+    grid-column: 2 / 5;
+    grid-row: 2 /3;
+    border-radius: %
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black
+}
+
+.prayer {
+    background-color: lightgrey;
+    grid-column: 2 / 3;
+    grid-row: 4/5;
+    padding: 1rem;
+}
+
+.reading{
+    background-color: lightgrey;
+    color: black;
+    grid-column: 3 /4;
+    grid-row: 4/5;
+    padding: 1rem;
+}
+
+.action {
+
+    grid-row: 4/5;
+    grid-column: 4/5;
+
+}
+
+.story {
+    grid-row:3/4;
+    grid-column:2/5;
+    background: black;
+    color: white;
+    font-size: 1.69rem;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
